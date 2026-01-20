@@ -46,21 +46,20 @@
 .clients img {
 	max-width: 140px;
 	height: auto;
-  }
+}
 
-  .clients img {
+.clients img {
 	max-width: 140px;
 	height: auto;
-  }
-  
-  @media (min-width: 992px) {
-	.clients img {
-	  max-width: 120px;
-	}
-  }
-  
+}
 
-  .bg-img-opacity {
+@media (min-width: 992px) {
+	.clients img {
+		max-width: 120px;
+	}
+}
+
+.bg-img-opacity {
 	position: relative;
 	min-height: 300px;
 	background-image: url("../img/onfocus-content-bg.jpg");
@@ -68,24 +67,24 @@
 	background-position: center;
 	object-fit: cover;
 	opacity: 1;
-  }
-  
-  .bg-img-opacity::before {
+}
+
+.bg-img-opacity::before {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background-color: rgba(0,0,0,0.5); 
-  }
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .card-img-top {
-	background-image: url('/assets/img/pricing-bg.jpg'); 
-	background-size: cover;   
+.card-img-top {
+	background-image: url("/assets/img/pricing-bg.jpg");
+	background-size: cover;
 	background-position: center;
-	height: 200px;           
-	position: relative; 
-  }
-  
-  .card-img-top::before {
+	height: 200px;
+	position: relative;
+}
+
+.card-img-top::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -93,19 +92,60 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .card-img-text {
+}
+
+.card-img-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;           
+	color: white;
 	text-align: center;
-	z-index: 2;          
-  }
+	z-index: 2;
+}
 
-  .card-second .card-img-top::before {
+.card-second .card-img-top::before {
 	background-color: rgba(255, 0, 0, 0.5);
-  }
-  
+}
+
+.text-multiline {
+	padding: 0 10px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	background: #0d6efd;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.play-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%, -50%);
+	border-style: solid;
+	border-width: 10px 0 10px 16px;
+	border-color: transparent transparent transparent #fff;
+}
+
+.bg-image {
+	background-image: url("/assets/img/onfocus-video-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+.icon-footer {
+	color: white;
+}
